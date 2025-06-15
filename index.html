@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Área Técnica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    .titulo-animado {
+      font-size: 24px;
+      font-weight: bold;
+      animation: mover 3s infinite alternate;
+    }
+
+    @keyframes mover {
+      from {
+        letter-spacing: 2px;
+        color: red;
+      }
+      to {
+        letter-spacing: 8px;
+        color: blue;
+      }
+    }
+
+    nav {
+      display: flex;
+      background-color: #f9c5d1;
+      justify-content: space-around;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav div {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      color: darkred;
+      font-weight: bold;
+    }
+
+    nav .submenu {
+      display: none;
+      position: absolute;
+      background-color: #fde0e6;
+      min-width: 160px;
+      z-index: 1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav div:hover .submenu {
+      display: block;
+    }
+
+    nav .submenu a {
+      color: #000;
+      font-weight: normal;
+    }
+
+    .info {
+      padding: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="niña.gif" class="logo" alt="Logo niña leyendo">
+    <p class="titulo-animado">PROYECTO ÁREA TÉCNICA INFORMÁTICA 2025-2026</p>
+    <p><strong>BRAVO ANDRADE ANA </strong></p>
+  </header>
+
+  <nav>
+    <div>
+      <a href="#">DISEÑO Y DESARROLLO WEB</a>
+      <div class="submenu">
+        <li> <a href="file:///D:/ANITA/HOSTING.html">1er Trimestre</a></li>>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </div>
+    <div>
+      <a href="#">SISTEMAS OPERATIVOS Y REDES</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </div>
+    <div>
+      <a href="#">SOPORTE TÉCNICO</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </div>
+    <div>
+      <a href="#">PROGRAMACIÓN Y BASE DE DATOS</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </div>
+    <div>
+      <a href="#">APLICACIONES OFIMÁTICAS</a>
+      <div class="submenu">
+        <a href="#">1er Trimestre</a>
+        <a href="#">2do Trimestre</a>
+        <a href="#">3er Trimestre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="info">
+    <p>Bienvenido al proyecto del área técnica de informática del año lectivo 2025-2026.</p>
+  </div>
+
+</body>
+</html>
